@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepinillos XL</title>
+</head>
+<body>
+    <h1>Pepinillos Manolo</h1>
+    <h2>Formulario de pedidos</h2>
+    <p></p>
+    <p>Podras realizar todos los pedidos de los pepinillos mas XL que existen</p>
+
+    <img src="pepinillos.jpg" alt="pepinillos emplatados" title="Plato pepino" width="300" >
+    <p></p>
+    <a href="https://rooftopsmokehouse.com/products/pepinillos-nuevo-formato?srsltid=AfmBOoqOSuE3WayByM7fiPbJcIYcBGD71yJabFCApYYSd1rJoEiS3H_Q" target="_blank" rel="noopener noreferrer">
+        Enlace pepino
+    </a>
+
+    <p></p>
+
+    <ul>
+        <li>XL</li>
+        <li>2XL</li>
+        <li>3XL</li>
+        <li>4XL</li>
+    </ul>
+
+    <p></p>
+
+    <table border="1">
+
+        <caption>Tabla pedidos</caption>
+
+        <thead>
+            <tr>
+                <th>N Pedido</th>
+                <th>Fecha</th>
+                <th>Importe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>42</td>
+                <td>31-10-25</td>
+                <td>33€</td>
+
+            </tr>
+
+            <tr>
+                <td>86</td>
+                <td>31-10-25</td>
+                <td>26€</td>
+
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Este es mi footer de la tabla</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <p></p>
+
+    <section id="formulario">
+
+        <form id="contacto">
+
+            <h3>Realiza tu pedido</h3>
+
+            <fieldset>
+                <legend>Datos basicos</legend>
+
+                <label>Nombre:
+                    <input type="text" placeholder="Paco Sanz" id="nombre" required>
+                </label>
+
+                <p></p>
+
+                <label>Email:
+                    <input type="email" placeholder="pacosanz@gmail.com" id="email" required>
+                </label>
+
+                <p></p>
+
+                <label>Telefono:
+                    <input type="tel" required id="tel" required>
+
+                </label>
+
+            </fieldset>
+
+            <p></p>
+
+            <fieldset>
+                <legend>Detalles de pedido</legend>
+
+                <label>Cantidad de productos
+                <input type="number" min="1" max="20" value="10" >
+                </label>
+
+                <p></p>
+
+                <label>Tipo de pepino</label>
+
+                <select name="tipos pepino" multiple size="6">
+                    <optgroup label="Grandecitos">
+                    <option value="XL">Pepino XL</option>
+                    <option value="2XL">Pepino 2XL</option>
+                    <option value="3XL">Pepino 3XL</option>
+                    
+                    </optgroup>
+                    
+                    <optgroup label="Monstruosos">
+                    <option value="4XL">Pepino 4XL</option>
+                    </optgroup>
+
+                </select>
+
+            </fieldset>
+
+            <p></p>
+
+            <fieldset>
+
+                <legend>Comentarios varios</legend>
+                <textarea id="textarea" rows="6" cols="44"></textarea>
+
+            </fieldset>
+
+            <p></p>
+
+            <fieldset>
+
+                <legend>Adjuntar archivos</legend>
+                <label>Seleccionar archivos
+                    <input type="file" id="archivos" accept=".pdf, .jpg" multiple>
+                </label>
+
+                <p></p>
+
+                <label>Barra progreso</label>
+                <input type="range" min="0" max="100" value="33" id="progreso">
+            </fieldset>
+
+            <p></p>
+            <p></p>
+
+            
+            <button type="submit">Enviar formulario</button> <button type="reset">Limpiar formulario</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,360 @@
+:root {
+
+    --color-principal: #0f766e;
+
+    --color-secundario: #f8fafc;
+
+    --color-texto: #1f2933;
+
+    --border-radius: 13px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    padding: 20px;
+
+}
+
+figcaption {
+
+    margin-bottom: 16px;
+    font-size: 0.7rem;
+
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+nav ul li {
+
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: var(--color-principal);
+    color: white;
+    border-radius: 5px;
+}
+
+
+h1,
+h2 {
+
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: var(--color-principal);
+}
+
+a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+a:hover {
+
+    text-decoration: underline;
+}
+
+header {
+
+    text-align: center;
+    background-color: var(--color-principal);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    color: white;
+    margin-bottom: 25px;
+
+
+}
+
+header h1 {
+
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.logo1 {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+}
+
+
+.content p {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.products h2 {
+
+    margin-bottom: 20px;
+}
+
+.products .img1 {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: var(--border-radius);
+    border: 1px solid;
+}
+
+
+.products figcaption {
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.tabla-products {
+
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.tabla-products th,
+.tabla-products td {
+
+    border: 1px solid rgb(10, 136, 62);
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.tabla-products td:nth-child(3) {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.tabla-products thead th {
+
+    background-color: var(--color-principal);
+    color: white;
+    text-align: center;
+}
+
+.tabla-products tbody tr:nth-child(even) {
+    background-color: #f0fdf9;
+}
+
+
+.tabla-products tfoot td {
+
+    text-align: center;
+    padding: 15px;
+}
+
+.tabla-products a {
+    font-weight: bold;
+    padding: 6px 12px;
+    display: inline-block;
+}
+
+.tabla-products a:hover {
+
+    background-color: var(--color-principal);
+    color: white;
+    border-radius: 5px;
+}
+
+.tabla-products tbody tr:hover {
+    background-color: #ccfbf1;
+}
+
+
+.tabla-products img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.destacado {
+    border: 2px solid var(--color-principal);
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ecfdf5;
+
+}
+
+.destacado h2 {
+    margin-bottom: 15px;
+}
+
+.destacado ul {
+    margin-left: 20px;
+}
+
+.destacado li {
+    margin-bottom: 10px;
+}
+
+.formulario {
+
+    padding: 20px;
+    background-color: #ecfdf5;
+    border: 2px solid var(--color-principal);
+    border-radius: var(--border-radius);
+}
+
+
+.form .campo {
+
+    margin-bottom: 15px;
+}
+
+.form span {
+
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form input,
+.form select,
+.form textarea {
+
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.1rem;
+    border: 1px solid;
+}
+
+.form input:hover,
+.form select:hover,
+.form textarea:hover {
+
+    border: 2px solid greenyellow;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+
+    border-color: green;
+    outline: none;
+    box-shadow: 0 0 7px greenyellow;
+}
+
+.acciones {
+
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btn {
+
+    padding: 12px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid;
+    transition: background-color 1s ease, transform 0.3s ease;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+.btn-enviar {
+
+    background-color: var(--color-principal);
+    color: white;
+
+}
+
+.btn-borrar {
+
+    background-color: transparent;
+    color: var(--color-principal);
+
+
+}
+
+.btn-enviar:hover {
+
+    background-color: #14b8a6;
+    transform: scale(1.05);
+
+
+}
+
+.btn-borrar:hover {
+
+    background-color: #e5e7eb;
+    transform: scale(1.05);
+
+
+}
+
+.site-footer {
+    background-color: transparent;
+    border: 2px solid var(--color-principal);
+    border-radius: var(--border-radius);
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+
+    .logo1 {
+        width: 95%;
+        max-width: none;
+    }
+
+    .products .img1 {
+        width: 95%;
+        max-width: none;
+    }
+
+}
